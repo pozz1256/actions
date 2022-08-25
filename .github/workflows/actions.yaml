@@ -1,0 +1,14 @@
+name: Actions flow
+
+on [push, pull request]
+
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files
+        run: |
+          pwd
+          ls -la
+          echo $GITHUB_SHA
+          
