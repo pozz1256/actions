@@ -1,6 +1,6 @@
 name: Actions flow
 
-on: [push, pull request]
+on: [push, pull_request]
 
 jobs:
   run-github-actions:
